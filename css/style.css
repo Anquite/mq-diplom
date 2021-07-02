@@ -214,17 +214,18 @@ body {
     color: #ffffff;
 }
 
+.hidden-text {
+  display: none;
+}
+
 .menu-button {
     width: 1.4em;
     height: 1em;
     border: none;
     padding: 0;
-
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
-    text-indent: -9999px;
-    cursor: pointer;
 }
 
 .menu-button:before,
@@ -375,22 +376,26 @@ body {
 
 .trend-card1 {
     background-image: url("https://i112.fastpic.ru/big/2020/0814/b8/3d58e5bb16c116196942049de5810db8.jpg");
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .trend-card2 {
     background-image: url("https://i112.fastpic.ru/big/2020/0814/55/4b3e47c6d6d4b9b5fec4860e01c21c55.jpg");
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .trend-card3 {
     background-image: url("https://i112.fastpic.ru/big/2020/0814/94/ce491d2d6ac5651ed8e1b4c25e2fec94.jpg");
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .trend-card4 {
     background-image: url("https://i112.fastpic.ru/big/2020/0814/92/548a44def20496c362b29ab726cd7a92.jpg");
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .trends-classes {
