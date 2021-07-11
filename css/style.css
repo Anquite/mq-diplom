@@ -22,15 +22,19 @@ body {
     font-style: normal;
 }
 
-.form-row {
+.form-row-site {
     width: 324px;
 }
 
-.form-row:nth-child(n + 2) {
+.form-row-mail {
     margin-top: 25px;
 }
 
-.form-row:last-child {
+.form-row-content {
+    margin-top: 25px;
+}
+
+.form-row-button {
     margin-top: 25px;
     text-align: center;
 }
@@ -66,7 +70,6 @@ body {
     width: 324px;
     border: 0 none;
     padding: 15px 55px;
-
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
@@ -82,19 +85,17 @@ body {
 .select {
     display: block;
     box-sizing: border-box;
-
     height: 50px;
     width: 324px;
     padding-left: 20px;
     margin: 0;
     border: 0 none;
-
     font-size: 14px;
     color: #a2a4a3;
-
+  
     -webkit-appearance: none;
     -moz-appearance: none;
-
+  
     background-image: url('data:image/svg+xml,\
     <svg width="174" height="296" fill="none" xmlns="http://www.w3.org/2000/svg">\
     <path d="M86.944.389l75.297 130.417H11.648L86.944.389zM86.945 296L11.648 165.583h150.593L86.944 296z" fill="#b59f5b"/>\
@@ -134,10 +135,9 @@ body {
 .radio-group {
     display: inline-block;
     font-size: 15px;
+    margin-left: 15px;
 }
 
-.radio-group:nth-of-type(n + 2) {
-    margin-left: 15px;
 }
 .radio:checked ~ .radio-group-text::before {
     background-image: url("form-circle.svg");
@@ -156,7 +156,6 @@ body {
     background-size: cover;
     background-color: #000000;
     position: relative;
-
     padding: 28px 0 143px;
 }
 
@@ -164,7 +163,6 @@ body {
     content: "";
     background-color: #000000;
     opacity: 0.5;
-
     position: absolute;
     top: 0;
     bottom: 0;
@@ -176,11 +174,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
-
     position: relative;
     z-index: 2;
 }
@@ -194,7 +190,6 @@ body {
     justify-content: flex-end;
     margin: 0;
     padding: 0;
-
     list-style-type: none;
 }
 
@@ -232,11 +227,9 @@ body {
 .menu-button:after {
     content: "";
     width: 100%;
-    height: 20%;
-
+    height: 25%;
     border-radius: 5px;
     background-color: #ffffff;
-
     position: absolute;
     left: 0;
 }
@@ -251,32 +244,23 @@ body {
 
 .menu-button-label {
     width: 100%;
-    height: 20%;
+    height: 25%;
     margin-top: -0.1em;
-
     border-radius: 5px;
     background-color: #ffffff;
-
     position: absolute;
     left: 0;
     top: 50%;
-
     display: block;
-}
-
-.menu-button-label:nth-child(2) {
-    margin: 6px auto;
 }
 
 .header-title {
     position: relative;
     z-index: 1;
-
     width: 740px;
     margin-top: 123px;
     margin-left: auto;
     margin-right: auto;
-
     font-size: 45px;
     font-weight: bold;
     line-height: 1.6;
@@ -291,14 +275,11 @@ body {
 .trends-title {
     width: 200px;
     box-sizing: border-box;
-
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-
     border: none;
-
     font-size: 20px;
     font-weight: bold;
     color: #0f0d0e;
@@ -309,10 +290,8 @@ body {
     content: "";
     position: absolute;
     display: inline-block;
-
     margin-top: 35px;
     margin-left: -120px;
-
     width: 65px;
     height: 3px;
     background-color: #e1d9bd;
@@ -328,7 +307,6 @@ body {
     height: 320px;
     margin-right: 12px;
     margin-bottom: 12px;
-
     display: flex;
     box-sizing: border-box;
     position: relative;
@@ -349,7 +327,7 @@ body {
     bottom: 0;
 }
 
-.trend-card:nth-child(4n) {
+.trend-card4 {
     margin-right: 0;
 }
 
@@ -357,15 +335,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     z-index: 2;
-
     box-sizing: border-box;
-
     padding-top: 22px;
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
     border: 3px solid #b59f5b;
-
     align-self: flex-end;
     margin-top: 125px;
     margin-left: 20px;
@@ -409,7 +384,6 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: #b59f5b;
-
     margin-left: 19px;
     text-transform: uppercase;
 }
@@ -560,7 +534,6 @@ body {
 .posts-title {
     display: inline-block;
     margin-top: 0;
-
     font-size: 14px;
     color: #0f0d0e;
     text-transform: uppercase;
@@ -570,10 +543,8 @@ body {
     content: "";
     position: absolute;
     display: inline-block;
-
     margin-top: 23px;
     margin-left: -78px;
-
     width: 65px;
     height: 3px;
     background-color: #e1d9bd;
@@ -581,7 +552,6 @@ body {
 
 .posts {
     width: 100%;
-
     display: flex;
     flex-wrap: wrap;
 }
@@ -616,7 +586,6 @@ body {
     margin: 0;
     padding: 0;
     margin-top: 10px;
-
     font-size: 14px;
     font-weight: bold;
     line-height: 1.3;
@@ -650,7 +619,6 @@ body {
     content: "";
     display: inline-block;
     margin-right: 0px;
-
     width: 50px;
     height: 47;
     border: none;
@@ -663,10 +631,7 @@ body {
 }
 
 .search-link {
-    position: absolute;
-    clip: rect(1px 1px 1px 1px);
-    width: 1px;
-    height: 1px;
+   display: none;
 }
 
 .subscribe-form {
@@ -679,12 +644,10 @@ body {
 
 .newsletter-title {
     box-sizing: border-box;
-
     border: none;
     margin-bottom: 38px;
     margin-left: auto;
     margin-right: auto;
-
     font-size: 14px;
     font-weight: bold;
     color: #0f0d0e;
@@ -695,10 +658,8 @@ body {
     content: "";
     position: absolute;
     display: inline-block;
-
     margin-top: 30px;
     margin-left: -75px;
-
     width: 65px;
     height: 3px;
     background-color: #e1d9bd;
@@ -719,7 +680,6 @@ body {
     height: 47px;
     margin-top: 19px;
     border: none;
-
     font-size: 14px;
     font-weight: bold;
     color: #ffffff;
@@ -740,9 +700,7 @@ body {
     margin-bottom: 38px;
     margin-left: auto;
     margin-right: auto;
-
     border: none;
-
     font-size: 14px;
     font-weight: bold;
     color: #0f0d0e;
@@ -782,9 +740,6 @@ body {
     font-weight: bold;
     color: #0f0d0e;
     text-transform: uppercase;
-}
-
-.tag-name:nth-child(n + 1) {
     margin-right: 4px;
 }
 
@@ -798,7 +753,6 @@ body {
     width: 100%;
     margin: 56px 97px 40px 88px;
     border: none;
-
     font-size: 14px;
     font-weight: bold;
     color: #0f0d0e;
@@ -897,7 +851,7 @@ body {
     opacity: 0.5;
 }
 
-.product:nth-child(2n) {
+.product2 {
     margin-right: 55px;
     margin-left: 55px;
 }
@@ -963,12 +917,10 @@ body {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-
     margin-top: 20px;
 }
 .footer {
     width: 75rem;
-
     margin-right: auto;
     margin-left: auto;
     margin-top: 69px;
@@ -979,9 +931,7 @@ body {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
-
     padding: 0;
-
     background-color: #f4f7f6;
 }
 
@@ -990,7 +940,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-
     list-style-type: none;
 }
 
@@ -1098,9 +1047,14 @@ body {
         width: 30%;
     }
 
-    .main-content, aside {
+    .main-content {
         width: 50%;
     }
+  
+    .aside {
+        width: 50%;
+    }
+ 
 }
 
 @media (min-width: 1200px) {
