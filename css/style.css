@@ -144,10 +144,7 @@ body {
 }
 
 .radio {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px;
+  display: none;
 }
 .header {
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
@@ -200,7 +197,7 @@ body {
     font-weight: normal;
 }
 
-.menu-list-item:first-child {
+.menu1 {
     margin-left: 0;
 }
 
@@ -303,7 +300,7 @@ body {
 }
 
 .trend-card {
-    width: 24%;
+    width: 25%;
     height: 320px;
     margin-right: 12px;
     margin-bottom: 12px;
@@ -388,7 +385,7 @@ body {
     text-transform: uppercase;
 }
 
-.trend-class:first-child {
+.trend-class1 {
     margin-left: 0;
 }
 
@@ -430,7 +427,7 @@ body {
     flex-wrap: wrap;
 }
 
-.article:nth-child(n + 2) {
+.article-more {
     margin-top: 60px;
 }
 
@@ -469,7 +466,7 @@ body {
     text-transform: uppercase;
 }
 
-.article-class:first-child {
+.article-class1 {
     margin-left: 0;
 }
 
@@ -560,7 +557,7 @@ body {
     display: flex;
 }
 
-.post:nth-child(n + 2) {
+.post-more {
     margin-top: 25px;
 }
 
@@ -837,7 +834,7 @@ body {
 }
 
 .product {
-    width: 30%;
+    width: 33%;
 }
 
 .product-imgbox {
@@ -852,8 +849,8 @@ body {
 }
 
 .product2 {
-    margin-right: 55px;
-    margin-left: 55px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .product-body {
@@ -943,7 +940,7 @@ body {
     list-style-type: none;
 }
 
-.socials-item:nth-child(n + 2) {
+.socials-item-more {
     margin-left: 30px;
 }
 
@@ -977,10 +974,7 @@ body {
 }
 
 .socials-link-text {
-    position: absolute;
-    width: 1px;
-    height: 2px;
-    clip: rect(1px 1px 1px 1px);
+  display: none;
 }
 
 .copyright {
@@ -1004,8 +998,14 @@ body {
         background-image: url("https://i112.fastpic.ru/big/2020/0816/47/cad1e0639976b4c47692bce5d5b38a47.jpg");
     }
 
-    .trends-container,
-    .articles,
+    .trends-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+     }
     .products-container {
         display: flex;
         flex-wrap: wrap;
@@ -1031,20 +1031,34 @@ body {
         display: none;
     }
 
-    .trends-container,
-    .article,
+   .trends-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+   .article {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .products-container {
         display: flex;
         flex-wrap: wrap;
     }
 
     .trend-card {
-        width: 49%;
-        margin-right: 12px;
+        width: calc(50% - 12px);
     }
-
+  
+    .trend-card2 {
+       margin-left: 12px;
+       margin-right: 0px;
+    }
+  
+    .trend-card4 {
+      margin-left: 12px;
+    }
+  
     .product {
-        width: 30%;
+        width: 33%;
     }
 
     .main-content {
@@ -1080,8 +1094,8 @@ body {
 .popup-close {
     width: 20px;
     height: 20px;
-    margin-top: -140%;
-    margin-left: 90%;
+    margin-top: -560px;
+    margin-left: 350px;
     position: absolute;
     font-size: 15px;
     border: none;
